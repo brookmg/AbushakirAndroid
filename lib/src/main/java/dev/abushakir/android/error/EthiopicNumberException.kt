@@ -1,3 +1,3 @@
 package dev.abushakir.android.error
 
-class EthiopicNumberException(message: String) : Exception(message)
+class EthiopicNumberException(message: String = "Exception") : Exception(message)
