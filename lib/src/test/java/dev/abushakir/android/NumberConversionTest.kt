@@ -26,4 +26,12 @@ class NumberConversionTest {
         Assert.assertEquals("፷", result)
     }
 
+    @Test fun `general number converter test`() {
+        val arabicNumberList = listOf(1, 10, 15, 20, 25, 78, 105, 333, 450, 600, 1000, 1001, 1010, 1056, 1200, 2013, 9999, 10000)
+        val geezNumberList = listOf("፩", "፲", "፲፭", "፳", "፳፭", "፸፰", "፻፭", "፫፻፴፫", "፬፻፶", "፮፻", "፲፻", "፲፻፩", "፲፻፲", "፲፻፶፮", "፲፪፻", "፳፻፲፫", "፺፱፻፺፱", "፻፻")
+
+        for (i in arabicNumberList.indices) {
+            Assert.assertEquals(geezNumberList[i] , ConversionLogic.convertToEthiopic(arabicNumberList[i]))
+        }
+    }
 }
