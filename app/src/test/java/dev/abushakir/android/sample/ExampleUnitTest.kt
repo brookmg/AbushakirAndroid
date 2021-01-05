@@ -1,4 +1,4 @@
-package dev.abushakir.android
+package dev.abushakir.android.sample
 
 import org.junit.Test
 
